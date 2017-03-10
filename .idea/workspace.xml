@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/javascript/script.js" afterPath="$PROJECT_DIR$/assets/javascript/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,10 +21,10 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.42917326">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="30">
@@ -35,31 +34,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="2-button-triggered-ajax-students.html" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Documents/UCLA/01-17-Class-Content/03-06-17_03-07-17_APIS-6.3/Activities/02-ButtonTriggeredAJAX/2-button-triggered-ajax-students.html">
+          <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/assets/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="883">
-                  <caret line="89" column="51" lean-forward="true" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="51" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="3-dynamic-elements-students.html" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Documents/UCLA/01-17-Class-Content/03-06-17_03-07-17_APIS-6.3/Activities/03-DynamicElements/3-dynamic-elements-students.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="1-student-do-todolist.html" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Documents/UCLA/01-17-Class-Content/03-08-17_03-09-17_Local-Storage/Activities/01-todolist-nopersistence/1-student-do-todolist.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="418">
-                  <caret line="48" column="58" lean-forward="false" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
+                <state relative-caret-position="75">
+                  <caret line="5" column="19" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="5" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -72,10 +51,10 @@
           <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/javascript/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="40" column="25" lean-forward="false" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+                <state relative-caret-position="1980">
+                  <caret line="134" column="58" lean-forward="false" selection-start-line="134" selection-start-column="58" selection-end-line="134" selection-end-column="58" />
                   <folding>
-                    <marker date="1489109221000" expanded="false" signature="0:52" ph="/** Created by juancarlosnavarrete on 3/7/17. ...*/" />
+                    <marker date="1489113575000" expanded="false" signature="0:52" ph="/** Created by juancarlosnavarrete on 3/7/17. ...*/" />
                   </folding>
                 </state>
               </provider>
@@ -126,9 +105,10 @@
         <option value="$USER_HOME$/Documents/UCLA/01-17-Class-Content/03-08-17_03-09-17_Local-Storage/Activities/02-signin-nopersistence/2-student-do-signin-no-persistence.html" />
         <option value="$USER_HOME$/Documents/UCLA/01-17-Class-Content/03-06-17_03-07-17_APIS-6.3/Activities/03-DynamicElements/3-dynamic-elements-students.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/assets/javascript/test.js" />
+        <option value="$USER_HOME$/Documents/UCLA/01-17-Class-Content/03-06-17_03-07-17_APIS-6.3/Activities/04-PausingGifs/4-pausing-gifs-students.html" />
         <option value="$PROJECT_DIR$/assets/javascript/script.js" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
       </list>
     </option>
   </component>
@@ -308,12 +288,12 @@
       <option name="presentableId" value="Default" />
       <updated>1488954719375</updated>
       <workItem from="1488954721045" duration="7207000" />
-      <workItem from="1489013226653" duration="27005000" />
+      <workItem from="1489013226653" duration="29821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34212000" />
+    <option name="totallyTimeSpent" value="37028000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -384,14 +364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/UCLA/01-17-Class-Content/03-08-17_03-09-17_Local-Storage/Activities/03-localstorage-demo/3-instructor-do-localstorage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -440,6 +412,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Documents/UCLA/01-17-Class-Content/03-06-17_03-07-17_APIS-6.3/Activities/04-PausingGifs/4-pausing-gifs-students.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="25" column="48" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/javascript/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="134" column="58" lean-forward="false" selection-start-line="134" selection-start-column="58" selection-end-line="134" selection-end-column="58" />
+          <folding>
+            <marker date="1489113575000" expanded="false" signature="0:52" ph="/** Created by juancarlosnavarrete on 3/7/17. ...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -448,13 +438,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascript/script.js">
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="40" column="25" lean-forward="false" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-          <folding>
-            <marker date="1489109221000" expanded="false" signature="0:52" ph="/** Created by juancarlosnavarrete on 3/7/17. ...*/" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="5" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -84,7 +84,10 @@ function buildGif(obj){
     var p = $("<p>").text("Rating: " + rating);
     var personImage = $("<img>");
     personImage.attr("src", obj.images.fixed_height.url);
-
+    personImage.attr("data-animate", obj.images.fixed_height.url);
+    personImage.attr("data-still", obj.images.original_still.url);
+    personImage.attr("data-state", 'animate');
+    personImage.addClass("gif");
     gifDiv.prepend(p);
     gifDiv.prepend(personImage);
 
@@ -117,6 +120,21 @@ $(document.body).on("click", ".btn-primary", function() {
     if(DEBUG){
         console.log("Click on this button: " + person);
     }
-} );
+});
+
+$(document.body).on("click", ".gif", function () {
+
+    if($(this).attr("data-state") === "animate"){
+        console.log("current state is change from animate to still");
+        $(this).attr("data-state", "still");
+        $(this).attr("src", $(this).attr("data-still"));
+    }
+    else{
+        console.log("current state is still change to animate");
+        $(this).attr("data-state", "animate");
+        $(this).attr("src", $(this).attr("data-animate"));
+    }
+
+});
 
 
