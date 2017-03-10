@@ -3,6 +3,12 @@ img{
 }
 
 .btn{
-    margin-right: 3%;
+    margin: 3%
+
+}
+
+.btn-container{
+    border: solid 2px  #eeeeee;
     margin-bottom: 3%;
+
 }
