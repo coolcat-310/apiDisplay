@@ -5,7 +5,7 @@
 var DEBUG = true;
 
 const apiKey = "dc6zaTOxFJmzC";
-const baseURL = "http://api.giphy.com/v1/gifs/search?q=";
+const baseURL = "https://api.giphy.com/v1/gifs/search?q=";
 
 var topics = {
     people : ["Terry Crews", "puppy", "Eddie Murphy", "Amy WineHouse"],
