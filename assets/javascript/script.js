@@ -21,7 +21,7 @@ var topics = {
         return name.replace(/\s/g, "+");
     },
     removePlus: function(name){
-        return name.replace(/\+/g, " ");
+        return name.replace(/\+/g, "");
     }
 
 };
@@ -45,10 +45,10 @@ function buildGiphy(arr) {
      * @method buildGiphy
      * @param none
      */
-
+    $(".giphy").removeClass('hide');
     for(var i = 0; i < arr.length; i++){
         console.log(arr[i]);
-        buildGif(arr[i]);
+        buildGif(arr[i], i);
     }
 }
 
@@ -59,9 +59,12 @@ function callApi(name) {
      * @param str: the name of the topic
      */
 
-    console.log(name);
-    var queryURL = baseURL + "" +  name + "&api_key=" + apiKey +"&limit=10";
-    console.log(queryURL);
+    var queryURL = baseURL +  topics.removeSpace(name) + "&api_key=" + apiKey +"&limit=10";
+
+    if(DEBUG){
+        console.log("Calling the API for: " + name);
+        console.log("The queryURL is: " + queryURL);
+    }
 
     $.ajax({
         url: queryURL,
@@ -73,11 +76,8 @@ function callApi(name) {
             console.log(Object.keys(response.data).length)
         }
         if(Object.keys(response.data).length === 0){
-            //check this if statement
-            console.log('inside the check');
-            var checkName = topics.removePlus(name);
-            alert("There are no gif for " + topics.removePlus(name));
-            $("#" + checkName).addClass('btn-danger').removeClass('btn-primary');
+            alert("There are no gif for " + name);
+            $("#" + name).addClass('btn-danger').removeClass('btn-primary').attr('disable', true);
         }
         else {
             buildGiphy(response.data);
@@ -100,9 +100,14 @@ function buildButton(newName){
     });
     btn.text(newName);
     $(".btn-container").append(btn);
+    if(DEBUG){
+        console.log("button created: ");
+        console.log("data-person: " + topics.removeSpace(newName));
+        console.log("id: " + newName);
+    }
 }
 
-function buildGif(obj){
+function buildGif(obj, num){
     /**
      * This function creates a gif with several attributes
      * @method buildGif
@@ -122,7 +127,8 @@ function buildGif(obj){
     personImage.addClass("gif");
     gifDiv.prepend(p);
     gifDiv.prepend(personImage);
-    $(".giphy").prepend(gifDiv);
+    $("#"+ num).html('');
+    gifDiv.appendTo("#" + num);
 }
 
 
@@ -132,9 +138,6 @@ $(document).ready(function () {
      * @method buildGif
      */
     buildInitialButtons();
-    if(DEBUG){
-        console.log("Create Initial Buttons");
-    }
 });
 
 $("#add-user").on("click", function(event) {
@@ -143,11 +146,12 @@ $("#add-user").on("click", function(event) {
      * @method click
      */
     event.preventDefault();
-    var name = $("#name-input").val();
+    var name = $("#name-input").val().trim();
     topics.addPerson(name);
     buildButton(name);
     if(DEBUG){
         console.log("Create Button name: " + name);
+        console.log("goto buildButton");
     }
     $("#name-input").val(' ')
 });
@@ -158,10 +162,12 @@ $(document.body).on("click", ".btn-primary", function() {
      * @method click
      */
     var person = $(this).attr('id');
-    callApi(person);
+
     if(DEBUG){
         console.log("Click on this button: " + person);
+        console.log("goto callAPI");
     }
+    callApi(person);
 });
 
 $(document.body).on("click", ".gif", function () {

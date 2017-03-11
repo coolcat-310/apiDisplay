@@ -1,5 +1,9 @@
 img{
     max-height: 200px;
+    margin: 3%;
+}
+p{
+    margin-left: 3%;
 }
 
 .btn{
@@ -7,8 +11,9 @@ img{
 
 }
 
-.btn-container{
+.btn-container, .giphy{
     border: solid 2px  #eeeeee;
     margin-bottom: 3%;
 
 }
+
