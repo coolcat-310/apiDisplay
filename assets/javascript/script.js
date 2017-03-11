@@ -1,14 +1,13 @@
 /**
  * Created by juancarlosnavarrete on 3/7/17.
  */
-
-var DEBUG = true;
+const DEBUG = false;
 
 const apiKey = "dc6zaTOxFJmzC";
 const baseURL = "https://api.giphy.com/v1/gifs/search?q=";
 
-var topics = {
-    people : ["Terry Crews", "puppy", "Eddie Murphy", "Amy WineHouse"],
+const topics = {
+    people: ["Terry Crews", "puppy", "Eddie Murphy", "Amy WineHouse"],
 
 
     addPerson: function (person) {
@@ -17,13 +16,9 @@ var topics = {
     getPeople: function () {
         return this.people;
     },
-    removeSpace: function(name){
+    removeSpace: function (name) {
         return name.replace(/\s/g, "+");
-    },
-    removePlus: function(name){
-        return name.replace(/\+/g, "");
     }
-
 };
 
 function buildInitialButtons(){
@@ -32,9 +27,9 @@ function buildInitialButtons(){
      * @method buildInitialButtons
      * @param none
      */
-    var arr = topics.getPeople();
+    const arr = topics.getPeople();
 
-    for(var i =0; i< arr.length; i++){
+    for(let i =0; i< arr.length; i++){
         buildButton(arr[i]);
     }
 }
@@ -46,7 +41,7 @@ function buildGiphy(arr) {
      * @param none
      */
     $(".giphy").removeClass('hide');
-    for(var i = 0; i < arr.length; i++){
+    for(let i = 0; i < arr.length; i++){
         console.log(arr[i]);
         buildGif(arr[i], i);
     }
@@ -58,8 +53,7 @@ function callApi(name) {
      * @method callApi
      * @param str: the name of the topic
      */
-
-    var queryURL = baseURL +  topics.removeSpace(name) + "&api_key=" + apiKey +"&limit=10";
+    const queryURL = baseURL + topics.removeSpace(name) + "&api_key=" + apiKey + "&limit=10";
 
     if(DEBUG){
         console.log("Calling the API for: " + name);
@@ -91,7 +85,7 @@ function buildButton(newName){
      * @method buildButton
      * @param str: which will be used as the id of the button
      */
-    var btn = $('<a>');
+    const btn = $('<a>');
     btn.addClass("btn btn-primary btn-lg");
     btn.attr({
         'role': 'button',
@@ -113,17 +107,16 @@ function buildGif(obj, num){
      * @method buildGif
      * @param obj: a gif object
      */
-
-    var gifDiv = $("<div class='item'>");
-    var rating = obj.rating;
-    var p = $("<p>").text("Rating: " + rating);
-    var personImage = $("<img>");
+    const gifDiv = $("<div class='item'>");
+    const rating = obj.rating;
+    const p = $("<p>").text("Rating: " + rating);
+    const personImage = $("<img>");
     personImage.attr({
         "src": obj.images.original_still.url,
         "data-animate": obj.images.fixed_height.url,
         "data-still": obj.images.original_still.url,
         "data-state": "still"
-    })
+    });
     personImage.addClass("gif");
     gifDiv.prepend(p);
     gifDiv.prepend(personImage);
@@ -146,7 +139,7 @@ $("#add-user").on("click", function(event) {
      * @method click
      */
     event.preventDefault();
-    var name = $("#name-input").val().trim();
+    const name = $("#name-input").val().trim();
     topics.addPerson(name);
     buildButton(name);
     if(DEBUG){
@@ -161,7 +154,7 @@ $(document.body).on("click", ".btn-primary", function() {
      * When the button with class:btn-primary is clicked then this function will run.
      * @method click
      */
-    var person = $(this).attr('id');
+    const person = $(this).attr('id');
 
     if(DEBUG){
         console.log("Click on this button: " + person);
